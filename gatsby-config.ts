@@ -5,6 +5,17 @@ export const siteMetadata = {
 }
 
 export const plugins = [
+  `gatsby-plugin-typescript`,
+  {
+    resolve: `gatsby-plugin-graphql-codegen`,
+    options: {
+      documentPaths: [
+        "./src/**/*.{ts,tsx}",
+        "./node_modules/gatsby-*/**/*.js",
+        "./gatsby-node.ts",
+      ],
+    },
+  },
   `gatsby-plugin-react-helmet`,
   {
     resolve: `gatsby-source-filesystem`,
