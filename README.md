@@ -1,22 +1,22 @@
 # gatsby-starter-typescript
 
-This starter is based on gatsby-starter-default. Typescript support has been added for Pages, Components, and gatsby-* files (gatsby-browser.ts, gatsby-config.ts, gatsby-node.ts, and gatsby-ssr.ts). Automatic type generation for GraphQL queries in Pages, Components, and the gatsby-node.ts file has also been added.
+This starter is based on gatsby-starter-default. Typescript support has been added for Pages, Components, and gatsby-\* files (gatsby-browser.ts, gatsby-config.ts, gatsby-node.ts, and gatsby-ssr.ts). Automatic type generation for GraphQL queries in Pages, Components, and the gatsby-node.ts file has also been added.
 
 ## Modified commands
 
 A few commands in `scripts` in package.json have been updated to make them more TypeScript-aware:
 
-* `build`: This command will run all type checks before building the project. If the type checks fail, then a build will not be produced.
-* `develop`: This command works the same way as it does in a standard Gatsby app, but it has been updated to print out TypeScript errors on every save. This gives live feedback as you work.
-* `format`: This command runs prettier on all the same files it used to plus `ts` and `tsx` files.
-* `test`: This command runs a type check before telling you that tests still need to be set up for this starter project. (The goal of this starter project is to add TypeScript to the default starter project as simply as possible. Adding tests is outside the scope of this project.)
+- `build`: This command will run all type checks before building the project. If the type checks fail, then a build will not be produced.
+- `develop`: This command works the same way as it does in a standard Gatsby app, but it has been updated to print out TypeScript errors on every save. This gives live feedback as you work.
+- `format`: This command runs prettier on all the same files it used to plus `ts` and `tsx` files.
+- `test`: This command runs a type check before telling you that tests still need to be set up for this starter project. (The goal of this starter project is to add TypeScript to the default starter project as simply as possible. Adding tests is outside the scope of this project.)
 
 ## Added commands
 
 Several new commands have been added to `scripts` in package.json to make writing TypeScript easier. You typically won't need to run these commands as type checking has been build into the standard gatsby development flow with the modifications made to the scripts above.
 
-* `type-check`: Run the TypeScript compiler and print out all errors.
-* `type-check:watch`: Run the TypeScript compiler in watch mode and print out all errors.
+- `type-check`: Run the TypeScript compiler and print out all errors.
+- `type-check:watch`: Run the TypeScript compiler in watch mode and print out all errors.
 
 ## GraphQL type generation
 
