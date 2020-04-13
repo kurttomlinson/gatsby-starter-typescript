@@ -26,7 +26,9 @@ Types are automatically generated for GraphQL queries in Pages, Components, and 
 
 See `src/components/image.tsx` (or the excerpt below) for an example of how to type a GraphQL query in a component. Note: queries must be named in order to type them because the code generator creates the type based on the name of the query.
 
-```
+```tsx
+// src/components/image.tsx
+
 import { ImageQuery } from "../../graphql-types"
 
 export const imageQuery = graphql`
@@ -48,6 +50,26 @@ const Image = () => {
 }
 
 export default Image
+```
+
+GraphQL queries in `gatsby-node.ts` are also supported. After writing your query, you may need to restart your gatsby development server before you can import the automatically generated type. You must name any queries in `gatsby-node.ts` for them to be picked up by the code generator.
+
+```ts
+// gatsby-node.ts
+
+import { ArticleQuery } from "./graphql-types"
+
+const { data: articleData }: { data?: ArticleQuery } = await graphql(`
+  query Article {
+    allArticlesJson {
+      nodes {
+        title
+        date
+        body
+      }
+    }
+  }
+`)
 ```
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
