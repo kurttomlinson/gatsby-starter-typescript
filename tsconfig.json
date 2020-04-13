@@ -14,6 +14,6 @@
     "jsx": "react", // Enable use of JSX
     "noEmit": true, // Let Gatsby and Babel compile
     "esModuleInterop": true, // Let node_modules code use other module types
-    "skipLibCheck": true, // Do not check declaration files
+    "skipLibCheck": true // Do not check declaration files
   }
 }
