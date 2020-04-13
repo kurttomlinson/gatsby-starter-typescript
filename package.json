@@ -42,7 +42,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md,ts,tsx}\"",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "npm run type-check && echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",
