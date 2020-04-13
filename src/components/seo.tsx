@@ -10,10 +10,20 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+type Metadatum =
+  | {
+      name: string
+      content: any
+    }
+  | {
+      property: string
+      content: any
+    }
+
 interface SEOProps {
   description: string
   lang: string
-  meta: JSX.IntrinsicElements['meta'][]
+  meta: Metadatum[]
   title: string
 }
 
