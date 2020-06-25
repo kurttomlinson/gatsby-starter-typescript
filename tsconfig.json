@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "strictNullChecks": false, // strictNullChecks cannot be enabled because the types generated for GraphQL are full of optional values.
-    "strict": false, // strict cannot be enabled because it turns on strictNullChecks
+    "strictNullChecks": true,
+    "strict": true,
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
 
