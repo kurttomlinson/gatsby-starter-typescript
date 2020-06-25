@@ -39,7 +39,4 @@ export const plugins = [
       icon: `src/images/gatsby-icon.png`,
     },
   },
-  // This (optional) plugin enables Progressive Web App + Offline
-  // functionality.To learn more, visit https://gatsby.dev/offline.
-  // `gatsby-plugin-offline`,
 ]
