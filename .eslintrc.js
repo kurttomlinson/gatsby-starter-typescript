@@ -7,10 +7,11 @@ module.exports = {
     project: "./tsconfig.json",
   },
   rules: {
-    "react/jsx-one-expression-per-line": ["off"],
     "@typescript-eslint/indent": ["off"],
     "@typescript-eslint/quotes": ["error", "double"],
+    "arrow-body-style": ["off"],
     "comma-dangle": ["off"],
     "object-curly-newline": ["off"],
+    "react/jsx-one-expression-per-line": ["off"],
   },
 };
