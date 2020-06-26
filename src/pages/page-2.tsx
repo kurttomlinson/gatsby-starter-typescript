@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import Layout from "../components/llayout";
-import SEO from "../components/sseo";
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 
 const SecondPage = () => (
   <Layout>
