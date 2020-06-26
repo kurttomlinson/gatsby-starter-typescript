@@ -1,3 +1,3 @@
 require("ts-node").register();
 
-module.exports = require("./gatsby-config-ts.ts");
+module.exports = require("./gatsby-config/gatsby-config.ts");
