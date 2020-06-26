@@ -12,7 +12,6 @@
     "eslint": "^7.3.1",
     "eslint-config-airbnb-typescript": "^8.0.2",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-config-react-app": "^5.2.1",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.1.4",
@@ -57,7 +56,42 @@
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "eslintConfig": {
+    "ignorePatterns": [
+      ".cache",
+      "public",
+      "graphql-types.ts"
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "globals": {
+      "__PATH_PREFIX__": true
+    },
+    "extends": [
+      "airbnb-typescript",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "@typescript-eslint/indent": [
+        "off"
+      ],
+      "@typescript-eslint/quotes": [
+        "error",
+        "double"
+      ],
+      "arrow-body-style": [
+        "off"
+      ],
+      "comma-dangle": [
+        "off"
+      ],
+      "object-curly-newline": [
+        "off"
+      ],
+      "react/jsx-one-expression-per-line": [
+        "off"
+      ]
+    }
   }
 }
