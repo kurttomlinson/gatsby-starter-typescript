@@ -10,7 +10,8 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./Header";
-import "./layout.css";
+import { GlobalStyle } from "./GlobalStyle";
+// import "./layout.css";
 
 interface LayoutProps {
   children: JSX.Element[] | JSX.Element;
@@ -29,6 +30,7 @@ const Layout = ({ children }: LayoutProps) => {
 
   return (
     <>
+      <GlobalStyle />
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
