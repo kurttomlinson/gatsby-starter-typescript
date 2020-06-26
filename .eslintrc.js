@@ -2,7 +2,11 @@ module.exports = {
   globals: {
     __PATH_PREFIX__: true,
   },
-  extends: ["react-app", "airbnb-typescript"],
+  extends: [
+    "airbnb-typescript",
+    "plugin:prettier/recommended",
+    "react-app",
+  ],
   parserOptions: {
     project: "./tsconfig.json",
   },

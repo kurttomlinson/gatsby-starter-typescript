@@ -1,6 +1,7 @@
 export const siteMetadata = {
   title: "Gatsby TypeScript Starter",
-  description: "Kick off your next, great Gatsby project with this TypeScript starter. This TypeScript starter ships with the main Gatsby configuration files you might need.",
+  description:
+    "Kick off your next, great Gatsby project with this TypeScript starter. This TypeScript starter ships with the main Gatsby configuration files you might need.",
   author: "Kurt Tomlinson",
 };
 
