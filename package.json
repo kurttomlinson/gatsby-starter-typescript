@@ -43,15 +43,15 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "npm run type-check && gatsby build",
+    "build": "yarn type-check && yarn lint && gatsby build",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md,ts,tsx}\"",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./",
     "serve": "gatsby serve",
-    "start": "npm run develop",
-    "test": "npm run type-check && echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "type-check:watch": "npm run type-check -- --watch",
+    "start": "yarn develop",
+    "test": "yarn type-check && yarn lint && echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "type-check:watch": "yarn type-check -- --watch",
     "type-check": "tsc"
   },
   "repository": {
